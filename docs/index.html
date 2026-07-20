@@ -135,9 +135,9 @@
     .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;position:relative;z-index:3}
     .filter{border:1px solid rgba(255,255,255,.18);background:transparent;color:#dfe5f4;padding:9px 14px;border-radius:99px;font-size:10px;cursor:pointer}
     .filter.active,.filter:hover{background:#fff;color:var(--ink)}
-    .gallery{display:grid;grid-template-columns:1.15fr .86fr .86fr;grid-template-rows:260px 260px;gap:15px;position:relative;z-index:2}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:235px;gap:15px;position:relative;z-index:2}
     .g{overflow:hidden;border-radius:20px;position:relative;background:#273454;cursor:zoom-in;transition:.3s}
-    .g:first-child{grid-row:1/3}.g:nth-child(4){grid-column:2/4}.g.hidden{display:none}
+    .g:first-child{grid-column:1/3;grid-row:1/3}.g:nth-child(2){grid-column:3/5}.g:nth-child(n+5){grid-column:span 2}.g.hidden{display:none}
     .g img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}.g:hover img{transform:scale(1.05)}
     .g:after{content:'';position:absolute;inset:38% 0 0;background:linear-gradient(transparent,rgba(8,15,31,.88))}
     .tag{position:absolute;z-index:2;bottom:18px;right:19px}.en .tag{right:auto;left:19px}.tag b{display:block;font-size:16px}.tag span{color:#dbe1ee;font-size:10px}
@@ -196,6 +196,7 @@
       .signature{grid-template-columns:1fr 1fr}.signature article:nth-child(2){border-left:0}.signature article:nth-child(-n+2){border-bottom:1px solid var(--line)}
       .story{gap:45px}.story-visual{max-width:650px;width:100%;margin:auto}.services{grid-template-columns:1fr 1fr}
       .experience{grid-template-columns:1fr}.experience-copy{position:static}.process{grid-template-columns:1fr 1fr;gap:38px 0}.process:before{display:none}
+      .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:330px}.g:first-child{grid-column:1/3;grid-row:auto}.g:nth-child(2),.g:nth-child(n+5){grid-column:auto}
       .proof-photo{height:520px}.booking-section{gap:40px}.social-grid{grid-template-columns:1fr 1fr 1fr}.social-intro{grid-row:1/3}.social-shot:last-child{display:none}
     }
     @media(max-width:700px){
@@ -205,7 +206,7 @@
       .signature{grid-template-columns:1fr 1fr}.signature article{padding:15px 8px;gap:8px}.signature i{font-size:16px}.signature b{font-size:10px}.signature span{font-size:7px}
       section.pad{padding:78px 0}.head{margin-bottom:36px}.story-visual{height:430px}.story-seal{width:88px;height:88px;font-size:7px}.story-points{grid-template-columns:1fr}.story-quote{font-size:11px}
       .services{grid-template-columns:1fr}.service{min-height:245px}.portfolio{padding:74px 15px;border-radius:28px}.split{grid-template-columns:1fr;gap:20px}
-      .gallery{grid-template-columns:1fr;grid-template-rows:repeat(4,360px)}.g:first-child,.g:nth-child(4){grid-column:auto;grid-row:auto}.filters{justify-content:center}
+      .gallery{grid-template-columns:1fr;grid-auto-rows:380px}.g:first-child,.g:nth-child(2),.g:nth-child(n+5){grid-column:auto;grid-row:auto}.filters{justify-content:center}
       .experience-list article{grid-template-columns:55px 1fr;padding:19px;gap:14px}.experience-list i{width:52px;height:52px}.process{grid-template-columns:1fr;gap:26px}.step{display:grid;grid-template-columns:60px 1fr;text-align:start;column-gap:15px}.step i{grid-row:1/3;width:58px;height:58px}.step h3{margin:6px 0 3px}
       .proof{gap:34px}.proof-photo{height:455px;border-radius:25px 80px 25px 25px}.booking-section{border-radius:28px;padding:60px 18px}.brief{padding:20px 16px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.brief-head{align-items:flex-start;flex-direction:column}
       .social-strip{padding-bottom:75px}.social-grid{grid-template-columns:1fr 1fr}.social-intro{grid-column:1/3;grid-row:auto;min-height:190px}.social-shot{min-height:230px}.social-shot:last-child{display:block}
@@ -251,9 +252,9 @@
           <div class="hero-note"><div class="avatars"><span>✦</span><span>♡</span><span>✓</span></div><span><span class="ar">أرسل نوع المناسبة والتاريخ والموقع لنبدأ</span><span class="en">Send the occasion, date and location to begin</span></span></div>
         </div>
         <div class="collage reveal">
-          <button class="photo p1" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/event-01.png" alt="تنسيق كوشة زفاف من أعمال Middle East Events"></button>
-          <button class="photo p2" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/event-05.png" alt="استقبال مولود من أعمال Middle East Events"></button>
-          <button class="photo p3" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/event-04.png" alt="ديكور احتفال من أعمال Middle East Events"></button>
+          <button class="photo p1" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-02.jpg" alt="تنسيق ملكة وورد من أعمال Middle East Events"></button>
+          <button class="photo p2" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-baby-01.jpg" alt="استقبال Baby Yahya من أعمال Middle East Events"></button>
+          <button class="photo p3" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-04.jpg" alt="بوابة ورد من أعمال Middle East Events"></button>
           <img class="logo-float" src="assets/logo.png" alt="Middle East Events">
           <div class="hero-card"><b><span class="ar">تفاصيل تصنع الفرق</span><span class="en">Details make the difference</span></b><span><span class="ar">فكرة • تصميم • تجهيز</span><span class="en">Concept • Design • Setup</span></span></div>
           <span class="spark s1">✦</span><span class="spark s2">✦</span>
@@ -273,8 +274,8 @@
     <section class="pad wrap" id="story">
       <div class="story">
         <div class="story-visual reveal">
-          <div class="main-shot"><img src="assets/event-01.png" alt="تنسيق زفاف من Middle East Events"></div>
-          <div class="side-shot"><img src="assets/event-07.png" alt="تفاصيل طاولة ضيافة"></div>
+          <div class="main-shot"><img loading="lazy" decoding="async" src="assets/ig-wedding-01.jpg" alt="تنسيق ملكة من Middle East Events"></div>
+          <div class="side-shot"><img loading="lazy" decoding="async" src="assets/ig-baby-02.jpg" alt="تفاصيل طاولة ضيافة واستقبال مولود"></div>
           <div class="story-seal"><span><span class="ar">كل مناسبة<br>لها قصتها</span><span class="en">EVERY EVENT<br>HAS A STORY</span></span></div>
         </div>
         <div class="reveal">
@@ -310,10 +311,14 @@
         <button class="filter" type="button" data-filter="details"><span class="ar">تفاصيل وضيافة</span><span class="en">Details & tables</span></button>
       </div>
       <div class="gallery">
-        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img src="assets/event-01.png" alt="كوشة وورد من Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">كوشة وورد</span><span class="en">Wedding stage</span></b><span><span class="ar">تنسيق أعراس وملكات</span><span class="en">Wedding styling</span></span></span></button>
-        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img src="assets/event-04.png" alt="استقبال مولود بالبالونات"><span class="zoom">＋</span><span class="tag"><b><span class="ar">استقبال مولود</span><span class="en">Baby welcome</span></b><span><span class="ar">بالونات وثيم خاص</span><span class="en">Balloons & custom theme</span></span></span></button>
-        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img src="assets/event-06.png" alt="ديكور استقبال مولود"><span class="zoom">＋</span><span class="tag"><b><span class="ar">تفاصيل ترحيب</span><span class="en">Welcome details</span></b><span><span class="ar">تصميم متناسق</span><span class="en">Coordinated styling</span></span></span></button>
-        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img src="assets/event-07.png" alt="طاولة ضيافة مولود"><span class="zoom">＋</span><span class="tag"><b><span class="ar">طاولة ضيافة</span><span class="en">Dessert table</span></b><span><span class="ar">توزيعات وحلويات</span><span class="en">Sweets & gifts</span></span></span></button>
+        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-01.jpg" alt="جلسة ملكة بتنسيق أبيض ووردي"><span class="zoom">＋</span><span class="tag"><b><span class="ar">جلسة ملكة</span><span class="en">Engagement setting</span></b><span><span class="ar">كوشة وورد وإضاءة</span><span class="en">Stage, flowers & lighting</span></span></span></button>
+        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-02.jpg" alt="تفاصيل كوشة ملكة من Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">تفاصيل الكوشة</span><span class="en">Stage details</span></b><span><span class="ar">ورد أبيض ولمسات وردية</span><span class="en">White florals & pink accents</span></span></span></button>
+        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-03.jpg" alt="لوحة ترحيب وورد من Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">لوحة ترحيب</span><span class="en">Welcome display</span></b><span><span class="ar">ورد وإضاءة وتفاصيل ضيافة</span><span class="en">Flowers, lighting & details</span></span></span></button>
+        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-04.jpg" alt="بوابة ورد ملكة من Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">بوابة ورد</span><span class="en">Floral entrance</span></b><span><span class="ar">مدخل يكمّل هوية المناسبة</span><span class="en">An entrance that completes the look</span></span></span></button>
+        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-01.jpg" alt="استقبال Baby Yahya بالبالونات"><span class="zoom">＋</span><span class="tag"><b><span class="ar">استقبال Baby Yahya</span><span class="en">Baby Yahya welcome</span></b><span><span class="ar">بالونات وثيم أخضر وذهبي</span><span class="en">Green & gold balloon theme</span></span></span></button>
+        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-02.jpg" alt="طاولة ضيافة واستقبال مولود"><span class="zoom">＋</span><span class="tag"><b><span class="ar">ضيافة وثيم متكامل</span><span class="en">Complete welcome theme</span></b><span><span class="ar">توزيعات وطاولة وخلفية</span><span class="en">Favours, table & backdrop</span></span></span></button>
+        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-03.jpg" alt="المشهد الكامل لاستقبال مولود"><span class="zoom">＋</span><span class="tag"><b><span class="ar">المشهد الكامل</span><span class="en">The complete setting</span></b><span><span class="ar">خلفية وضيافة وتفاصيل متناسقة</span><span class="en">Backdrop, tables & coordinated details</span></span></span></button>
+        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-04.jpg" alt="مدخل ترحيب بالمولود"><span class="zoom">＋</span><span class="tag"><b><span class="ar">مدخل وترحيب</span><span class="en">Welcome entrance</span></b><span><span class="ar">بالونات ولوحة مخصصة</span><span class="en">Balloons & custom sign</span></span></span></button>
       </div>
       <a class="insta" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener">◎ <span class="ar">شاهد المزيد على إنستغرام</span><span class="en">See more on Instagram</span> <b>@middleeastevents3</b></a>
     </section>
@@ -344,7 +349,7 @@
 
     <section class="pad wrap" id="why">
       <div class="proof">
-        <div class="proof-photo reveal"><img src="assets/event-05.png" alt="تنسيق احتفال مولود من Middle East Events"><div class="proof-caption"><b><span class="ar">تصميم متكامل</span><span class="en">One complete design</span></b><span><span class="ar">بالونات • خلفية • تفاصيل ضيافة</span><span class="en">Balloons • backdrop • welcome details</span></span></div></div>
+        <div class="proof-photo reveal"><img loading="lazy" decoding="async" src="assets/ig-baby-03.jpg" alt="تنسيق استقبال مولود متكامل من Middle East Events"><div class="proof-caption"><b><span class="ar">تصميم متكامل</span><span class="en">One complete design</span></b><span><span class="ar">بالونات • خلفية • تفاصيل ضيافة</span><span class="en">Balloons • backdrop • welcome details</span></span></div></div>
         <div class="reveal"><p class="eyebrow"><span class="ar">لماذا Middle East Events؟</span><span class="en">WHY MIDDLE EAST EVENTS?</span></p><h2><span class="ar">نرتّب التفاصيل لتستمتع أنت بالمناسبة</span><span class="en">We handle the details so you enjoy the moment</span></h2><div class="why">
           <article><i>01</i><div><h3><span class="ar">فكرة تناسبك</span><span class="en">A concept that fits you</span></h3><p><span class="ar">نبدأ من نوع المناسبة والألوان والمساحة والميزانية.</span><span class="en">We start with your occasion, colours, space and budget.</span></p></div></article>
           <article><i>02</i><div><h3><span class="ar">تنسيق منسجم</span><span class="en">One coordinated look</span></h3><p><span class="ar">الخلفية والورد والبالونات والطاولة تظهر كهوية واحدة.</span><span class="en">Backdrop, flowers, balloons and tables form one complete identity.</span></p></div></article>
@@ -385,10 +390,10 @@
     <section class="social-strip wrap">
       <div class="social-grid reveal">
         <div class="social-intro"><small>FOLLOW THE DETAILS</small><h3><span class="ar">المزيد من أعمالنا</span><span class="en">More of our work</span></h3><a href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener">@middleeastevents3 ↗</a></div>
-        <a class="social-shot" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener"><img src="assets/event-01.png" alt="كوشة من أعمالنا"></a>
-        <a class="social-shot" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener"><img src="assets/event-04.png" alt="ديكور من أعمالنا"></a>
-        <a class="social-shot" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener"><img src="assets/event-06.png" alt="بالونات من أعمالنا"></a>
-        <a class="social-shot" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener"><img src="assets/event-07.png" alt="طاولة ضيافة من أعمالنا"></a>
+        <a class="social-shot" href="https://www.instagram.com/p/DZe1ZbMAjAP/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-02.jpg" alt="تنسيق ملكة من أعمالنا"></a>
+        <a class="social-shot" href="https://www.instagram.com/p/DZe1ZbMAjAP/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-04.jpg" alt="بوابة ورد من أعمالنا"></a>
+        <a class="social-shot" href="https://www.instagram.com/p/Dak5cFnAogk/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-baby-01.jpg" alt="استقبال مولود من أعمالنا"></a>
+        <a class="social-shot" href="https://www.instagram.com/p/Dak5cFnAogk/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-baby-04.jpg" alt="مدخل استقبال مولود من أعمالنا"></a>
       </div>
     </section>
 
