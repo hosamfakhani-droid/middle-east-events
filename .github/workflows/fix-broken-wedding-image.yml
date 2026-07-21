@@ -1,0 +1,24 @@
+name: Fix broken wedding image
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-broken-wedding-image.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Remove broken image safely
+        shell: bash
+        run: |
+          python
