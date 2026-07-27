@@ -150,7 +150,7 @@
     .wedding-film:after{content:'WEDDING';position:absolute;left:-8px;bottom:-34px;font:700 88px Georgia,serif;letter-spacing:5px;color:rgba(104,72,170,.045)}
     .film-copy,.film-media{position:relative;z-index:2}.film-copy .lead{margin:20px 0 23px;font-size:14px}.film-copy .btn{margin-top:28px}
     .film-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:25px}.film-points span{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:13px;padding:13px 14px;font-size:10px;color:var(--ink2)}.film-points span:before{content:'✦';color:var(--pink);margin-left:7px}.en .film-points span:before{margin-left:0;margin-right:7px}
-    .film-media{width:min(390px,100%);margin:auto}.film-frame{aspect-ratio:9/16;border-radius:34px;overflow:hidden;background:#10172a;border:9px solid #fff;box-shadow:0 32px 70px rgba(48,47,91,.24);position:relative}.film-frame video,.film-frame img{width:100%;height:100%;object-fit:cover;display:block;background:#10172a}.film-badge{position:absolute;z-index:3;top:18px;right:18px;display:flex;align-items:center;gap:8px;background:rgba(16,23,42,.72);color:#fff;border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);border-radius:99px;padding:9px 12px;font-size:9px}.en .film-badge{right:auto;left:18px}.film-badge i{width:7px;height:7px;border-radius:50%;background:#63df9d;box-shadow:0 0 0 5px rgba(99,223,157,.14)}
+    .film-media{display:block;width:min(390px,100%);margin:auto;cursor:pointer}.film-frame{aspect-ratio:9/16;border-radius:34px;overflow:hidden;background:#10172a;border:9px solid #fff;box-shadow:0 32px 70px rgba(48,47,91,.24);position:relative;transition:transform .25s ease,box-shadow .25s ease}.film-media:hover .film-frame{transform:translateY(-5px);box-shadow:0 38px 76px rgba(48,47,91,.3)}.film-frame video,.film-frame img{width:100%;height:100%;object-fit:cover;display:block;background:#10172a}.film-badge{position:absolute;z-index:3;top:18px;right:18px;display:flex;align-items:center;gap:8px;background:rgba(16,23,42,.72);color:#fff;border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);border-radius:99px;padding:9px 12px;font-size:9px}.en .film-badge{right:auto;left:18px}.film-badge i{width:7px;height:7px;border-radius:50%;background:#63df9d;box-shadow:0 0 0 5px rgba(99,223,157,.14)}
     .film-note{text-align:center;margin:14px 0 0;color:var(--muted);font-size:9px;line-height:1.7}
 
     .experience{display:grid;grid-template-columns:.82fr 1.18fr;gap:75px;align-items:start}
@@ -200,7 +200,12 @@
     .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.seen{opacity:1;transform:none}
 
     @media(max-width:1020px){
-      .links{position:fixed;inset:122px 0 0;background:#fbfdff;display:none;flex-direction:column;justify-content:center;gap:18px;font-size:19px}.menu-open .links{display:flex}.menu-toggle{display:block}.nav-book{display:none}
+      .nav-actions{position:relative;z-index:3}
+      .links{position:fixed;inset:0;background:rgba(251,253,255,.98);backdrop-filter:blur(18px);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:145px 34px 42px;gap:8px;font-size:21px;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(100%);transition:transform .28s ease,opacity .2s ease,visibility .2s;z-index:2}
+      .links a{width:100%;padding:17px 0;border-bottom:1px solid var(--line)}
+      .menu-open .links{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(0)}
+      .en.menu-open .links{transform:translateX(0)}
+      .menu-toggle{display:block}.nav-book{display:none}
       .hero-grid,.story,.proof,.booking-section,.wedding-film{grid-template-columns:1fr}.hero{text-align:center}.hero .lead{margin-left:auto;margin-right:auto}.actions,.micro,.hero-note{justify-content:center}.collage{max-width:650px;width:100%;margin:auto}.hero-grid{gap:48px}
       .signature{grid-template-columns:1fr 1fr}.signature article:nth-child(2){border-left:0}.signature article:nth-child(-n+2){border-bottom:1px solid var(--line)}
       .story{gap:45px}.story-visual{max-width:650px;width:100%;margin:auto}.services{grid-template-columns:1fr 1fr}
@@ -209,7 +214,7 @@
       .wedding-film{gap:45px}.film-copy{text-align:center}.film-points{max-width:620px;margin:25px auto 0}.proof-photo{height:520px}.booking-section{gap:40px}.social-grid{grid-template-columns:1fr 1fr 1fr}.social-intro{grid-row:1/3}.social-shot:last-child{display:none}
     }
     @media(max-width:700px){
-      .wrap{width:calc(100% - 30px)}.topline{font-size:8px}.nav{height:75px}.brand img{width:53px;height:53px}.brandtext{display:none}.lang{padding:9px 12px;font-size:11px}.links{inset:111px 0 0}
+      .wrap{width:calc(100% - 30px)}.topline{font-size:8px}.nav{height:75px}.brand img{width:53px;height:53px}.brandtext{display:none}.lang{padding:9px 12px;font-size:11px}.links{padding:126px 25px 35px}
       .hero{padding:57px 0 42px;min-height:auto}.hero-grid{gap:28px}h1{font-size:40px;letter-spacing:-1.5px}.lead{font-size:13px}.actions .btn{width:100%}.micro{gap:9px}.micro>span{font-size:8px}.hero-note{display:none}
       .collage{height:415px}.logo-float{width:80px;height:80px}.p1{right:3%}.p2{left:1%}.hero-card{left:0;top:46%;padding:11px}.hero-card b{font-size:11px}.s1{display:none}
       .signature{grid-template-columns:1fr 1fr}.signature article{padding:15px 8px;gap:8px}.signature i{font-size:16px}.signature b{font-size:10px}.signature span{font-size:7px}
@@ -341,13 +346,13 @@
           <div class="film-points"><span><span class="ar">كوشة مصممة للمكان</span><span class="en">Venue-fitted stage</span></span><span><span class="ar">إضاءة تغيّر الأجواء</span><span class="en">Atmosphere lighting</span></span><span><span class="ar">ممر وتجهيز متكامل</span><span class="en">Complete aisle setup</span></span><span><span class="ar">تنفيذ في جميع الإمارات</span><span class="en">Setup across the UAE</span></span></div>
           <a class="btn wa" href="#brief"><span class="ar">احكي لنا عن زفافك</span><span class="en">Tell us about your wedding</span> ↓</a>
         </div>
-        <div class="film-media reveal">
+        <a class="film-media reveal" href="https://www.instagram.com/middleeastevents3/reels/" target="_blank" rel="noopener" aria-label="شاهد ريلز الأعراس على إنستغرام">
           <div class="film-frame">
             <span class="film-badge"><i></i><span class="ar">فيديو من أعمالنا</span><span class="en">OUR REAL WORK</span></span>
             <img src="assets/wedding-hotel-poster.webp" alt="لقطة من تجهيز زفاف فندقي من Middle East Events">
           </div>
-          <p class="film-note"><span class="ar">لقطة من تجهيز زفاف فندقي حقيقي من أعمالنا</span><span class="en">A real hotel wedding setup from our work</span></p>
-        </div>
+          <p class="film-note"><span class="ar">اضغط لمشاهدة ريلز الأعراس على إنستغرام</span><span class="en">Tap to watch our wedding reels on Instagram</span></p>
+        </a>
       </div>
     </section>
 
@@ -418,7 +423,7 @@
     <section class="social-strip wrap">
       <div class="social-grid reveal">
         <div class="social-intro"><small>FOLLOW THE DETAILS</small><h3><span class="ar">المزيد من أعمالنا</span><span class="en">More of our work</span></h3><a href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener">@middleeastevents3 ↗</a></div>
-        <a class="social-shot" href="https://www.instagram.com/p/DW59rUmiK4F/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="كوشة زفاف بيضاء من أعمالنا"></a>
+        <a class="social-shot" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="كوشة زفاف بيضاء من أعمالنا"></a>
         <a class="social-shot" href="https://www.instagram.com/p/DXJvFGJAuHo/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-garden.webp" alt="جلسة زفاف خارجية من أعمالنا"></a>
         <a class="social-shot" href="https://www.instagram.com/p/DWmAKJoghOH/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-lighting.webp" alt="كوشة زفاف بإضاءة ليلية من أعمالنا"></a>
         <a class="social-shot" href="https://www.instagram.com/p/Dak5cFnAogk/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-baby-04.jpg" alt="مدخل استقبال مولود من أعمالنا"></a>
@@ -457,8 +462,14 @@
       localStorage.setItem('mee-language',english?'en':'ar');
       closeMenu();
     }
-    function toggleMenu(){body.classList.toggle('menu-open');menuButton.setAttribute('aria-expanded',body.classList.contains('menu-open'))}
-    function closeMenu(){body.classList.remove('menu-open');menuButton.setAttribute('aria-expanded','false')}
+    function setMenu(open){
+      body.classList.toggle('menu-open',open);
+      menuButton.setAttribute('aria-expanded',String(open));
+      menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');
+      menuButton.textContent=open?'×':'☰';
+    }
+    function toggleMenu(){setMenu(!body.classList.contains('menu-open'))}
+    function closeMenu(){setMenu(false)}
     document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',closeMenu));
     window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>20),{passive:true});
 
