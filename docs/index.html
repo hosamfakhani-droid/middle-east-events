@@ -4,21 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f5fbff">
-  <title>Middle East Events | تنسيق مناسبات وأعراس في الإمارات</title>
-  <meta name="description" content="تنسيق وتجهيز الأعراس والملكات والمناسبات في جميع الإمارات — من الفكرة والكوشة إلى الورد والإضاءة واللمسات الأخيرة. احجز مباشرة عبر واتساب.">
+  <title>Middle East Events | UAE Wedding &amp; Event Planner | تنسيق مناسبات</title>
+  <meta name="description" content="Middle East Events is a UAE event planner for weddings, parties, corporate events and event management—creating luxury weddings and custom party planning with professional event organizers.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Middle East Events | Your Moment, Beautifully Styled">
-  <meta property="og:description" content="تنسيق متكامل للأعراس والمناسبات في جميع الإمارات — من الفكرة حتى آخر لمسة.">
   <link rel="canonical" href="https://hosamfakhani-droid.github.io/middle-east-events/">
+  <meta property="og:site_name" content="Middle East Events">
+  <meta property="og:locale" content="ar_AE">
+  <meta property="og:title" content="Middle East Events | UAE Wedding &amp; Event Planner">
+  <meta property="og:description" content="Luxury weddings, custom party planning, corporate events and professional event management across the UAE.">
+  <meta property="og:url" content="https://hosamfakhani-droid.github.io/middle-east-events/">
+  <meta property="og:image" content="https://hosamfakhani-droid.github.io/middle-east-events/assets/ig-wedding-01.jpg">
+  <meta property="og:image:alt" content="Luxury wedding design by Middle East Events, a UAE wedding and event planner">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Middle East Events | UAE Wedding &amp; Event Planner">
+  <meta name="twitter:description" content="Luxury weddings, custom party planning, corporate events and professional event management across the UAE.">
+  <meta name="twitter:image" content="https://hosamfakhani-droid.github.io/middle-east-events/assets/ig-wedding-01.jpg">
+  <meta name="twitter:image:alt" content="Luxury wedding design by Middle East Events, a UAE wedding and event planner">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"ProfessionalService",
+    "@type":"LocalBusiness",
+    "@id":"https://hosamfakhani-droid.github.io/middle-east-events/#localbusiness",
     "name":"Middle East Events",
+    "image":"https://hosamfakhani-droid.github.io/middle-east-events/assets/ig-wedding-01.jpg",
     "url":"https://hosamfakhani-droid.github.io/middle-east-events/",
     "telephone":"+971523826110",
-    "description":"Wedding and event styling across the United Arab Emirates.",
+    "description":"UAE event planner for luxury weddings, party planning, corporate events and professional event management.",
+    "priceRange":"$$",
     "areaServed":{"@type":"Country","name":"United Arab Emirates"},
+    "knowsAbout":["wedding planning","luxury weddings","custom party planning","corporate events","event management"],
+    "contactPoint":{"@type":"ContactPoint","telephone":"+971523826110","contactType":"customer service","availableLanguage":["Arabic","English"]},
     "sameAs":["https://www.instagram.com/middleeastevents3/"]
   }
   </script>
@@ -45,10 +60,10 @@
     .topline{height:36px;background:var(--ink);color:#eaf0ff;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.8px;text-align:center}
     .topline span{opacity:.9}
     .topline b{color:#ff9dce;margin:0 7px}
-    .header{position:sticky;top:0;z-index:60;background:rgba(251,253,255,.88);border-bottom:1px solid transparent;backdrop-filter:blur(18px);transition:.25s}
+    .header{position:sticky;top:0;z-index:60;isolation:isolate;background:rgba(251,253,255,.88);border-bottom:1px solid transparent;backdrop-filter:blur(18px);transition:.25s}
     .header.scrolled{border-color:var(--line);box-shadow:0 8px 28px rgba(27,38,65,.06)}
-    .nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;align-items:center;gap:12px;direction:ltr;flex-shrink:0}
+    .nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative}
+    .brand{display:flex;align-items:center;gap:12px;direction:ltr;flex-shrink:0;position:relative;z-index:3}
     .brand img{width:62px;height:62px;border-radius:50%;object-fit:cover;box-shadow:0 6px 24px rgba(99,105,170,.15)}
     .brandtext{font-size:11px;letter-spacing:2px;color:var(--purple);line-height:1.3}
     .brandtext b{display:block;color:var(--pink);font-size:14px;letter-spacing:2.8px}
@@ -201,10 +216,10 @@
 
     @media(max-width:1020px){
       .nav-actions{position:relative;z-index:3}
-      .links{position:fixed;inset:0;background:rgba(251,253,255,.98);backdrop-filter:blur(18px);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:145px 34px 42px;gap:8px;font-size:21px;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(100%);transition:transform .28s ease,opacity .2s ease,visibility .2s;z-index:2}
+      .links{position:fixed;inset-block:0;inset-inline-start:0;inset-inline-end:auto;width:100vw;overflow-y:auto;background:#fbfdff;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:145px 34px 42px;gap:8px;font-size:21px;direction:rtl;text-align:right;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(110%);transition:transform .28s ease,opacity .2s ease,visibility .2s;z-index:2}
+      .en .links{direction:ltr;text-align:left;transform:translateX(-110%)}
       .links a{width:100%;padding:17px 0;border-bottom:1px solid var(--line)}
       .menu-open .links{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(0)}
-      .en.menu-open .links{transform:translateX(0)}
       .menu-toggle{display:block}.nav-book{display:none}
       .hero-grid,.story,.proof,.booking-section,.wedding-film{grid-template-columns:1fr}.hero{text-align:center}.hero .lead{margin-left:auto;margin-right:auto}.actions,.micro,.hero-note{justify-content:center}.collage{max-width:650px;width:100%;margin:auto}.hero-grid{gap:48px}
       .signature{grid-template-columns:1fr 1fr}.signature article:nth-child(2){border-left:0}.signature article:nth-child(-n+2){border-bottom:1px solid var(--line)}
@@ -235,8 +250,8 @@
   <div class="topline"><span><span class="ar">تنسيق مناسبات</span><span class="en">EVENT STYLING</span><b>✦</b><span class="ar">حجز مباشر عبر واتساب</span><span class="en">DIRECT WHATSAPP BOOKING</span></span></div>
   <header class="header" id="header">
     <div class="nav wrap">
-      <a class="brand" href="#top" aria-label="Middle East Events"><img src="assets/logo.png" alt="Middle East Events logo"><span class="brandtext">MIDDLE EAST <b>EVENTS</b></span></a>
-      <nav class="links" id="navLinks">
+      <a class="brand" href="#top" aria-label="Middle East Events"><img src="assets/logo.png" alt="Middle East Events logo — UAE wedding and event planner"><span class="brandtext">MIDDLE EAST <b>EVENTS</b></span></a>
+      <nav class="links" id="navLinks" aria-label="التنقل الرئيسي">
         <a href="#story"><span class="ar">قصتنا</span><span class="en">Our story</span></a>
         <a href="#services"><span class="ar">خدماتنا</span><span class="en">Services</span></a>
         <a href="#work"><span class="ar">أعمالنا</span><span class="en">Our work</span></a>
@@ -246,7 +261,7 @@
       <div class="nav-actions">
         <button class="lang" type="button" onclick="toggleLang()" aria-label="Change language"><span class="ar">English</span><span class="en">العربية</span></button>
         <a class="nav-book" href="https://wa.me/971523826110?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Middle%20East%20Events%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%AC%D9%87%D9%8A%D8%B2%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9." target="_blank" rel="noopener">◉ <span class="ar">احجز الآن</span><span class="en">Book now</span></a>
-        <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
@@ -266,10 +281,10 @@
           <div class="hero-note"><div class="avatars"><span>✦</span><span>♡</span><span>✓</span></div><span><span class="ar">أرسل نوع المناسبة والتاريخ والموقع لنبدأ</span><span class="en">Send the occasion, date and location to begin</span></span></div>
         </div>
         <div class="collage reveal">
-          <button class="photo p1" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-oxygen.png" alt="كوشة زفاف بيضاء وورد من أعمال Middle East Events"></button>
-          <button class="photo p2" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-garden.webp" alt="جلسة زفاف خارجية بورد أبيض من أعمال Middle East Events"></button>
-          <button class="photo p3" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-lighting.webp" alt="كوشة زفاف وإضاءة ليلية من أعمال Middle East Events"></button>
-          <img class="logo-float" src="assets/logo.png" alt="Middle East Events">
+          <button class="photo p1" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-oxygen.png" alt="كوشة زفاف فاخرة بورد أبيض من Middle East Events، منظم أعراس ومناسبات في الإمارات"></button>
+          <button class="photo p2" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-garden.webp" alt="تنسيق زفاف خارجي فاخر من مخطط حفلات وأعراس Middle East Events في الإمارات"></button>
+          <button class="photo p3" type="button" onclick="openLightbox(this.querySelector('img'))"><img src="assets/ig-wedding-lighting.webp" alt="كوشة زفاف وإضاءة ليلية من خدمات إدارة المناسبات Middle East Events"></button>
+          <img class="logo-float" src="assets/logo.png" alt="Middle East Events — UAE wedding and event planner logo">
           <div class="hero-card"><b><span class="ar">تفاصيل تصنع الفرق</span><span class="en">Details make the difference</span></b><span><span class="ar">فكرة • تصميم • تجهيز</span><span class="en">Concept • Design • Setup</span></span></div>
           <span class="spark s1">✦</span><span class="spark s2">✦</span>
         </div>
@@ -288,8 +303,8 @@
     <section class="pad wrap" id="story">
       <div class="story">
         <div class="story-visual reveal">
-          <div class="main-shot"><img loading="lazy" decoding="async" src="assets/ig-wedding-01.jpg" alt="تنسيق ملكة من Middle East Events"></div>
-          <div class="side-shot"><img loading="lazy" decoding="async" src="assets/ig-baby-02.jpg" alt="تفاصيل طاولة ضيافة واستقبال مولود"></div>
+          <div class="main-shot"><img loading="lazy" decoding="async" src="assets/ig-wedding-01.jpg" alt="تنسيق ملكة وزفاف فاخر من Middle East Events، منظم مناسبات محترف في الإمارات"></div>
+          <div class="side-shot"><img loading="lazy" decoding="async" src="assets/ig-baby-02.jpg" alt="طاولة ضيافة واستقبال مولود ضمن تخطيط حفلات مخصص من Middle East Events"></div>
           <div class="story-seal"><span><span class="ar">كل مناسبة<br>لها قصتها</span><span class="en">EVERY EVENT<br>HAS A STORY</span></span></div>
         </div>
         <div class="reveal">
@@ -325,14 +340,14 @@
         <button class="filter" type="button" data-filter="details"><span class="ar">تفاصيل وضيافة</span><span class="en">Details & tables</span></button>
       </div>
       <div class="gallery">
-        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="كوشة زفاف بيضاء مزينة بالورد"><span class="zoom">＋</span><span class="tag"><b><span class="ar">زفاف بطابع فاخر</span><span class="en">Luxury wedding stage</span></b><span><span class="ar">ورد أبيض وتفاصيل ناعمة</span><span class="en">White florals & soft details</span></span></span></button>
-        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-garden.webp" alt="جلسة زفاف خارجية بورد أبيض"><span class="zoom">＋</span><span class="tag"><b><span class="ar">زفاف خارجي</span><span class="en">Outdoor wedding</span></b><span><span class="ar">قوس ورد وجلسة متناسقة</span><span class="en">Floral arch & styled seating</span></span></span></button>
-        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-lighting.webp" alt="كوشة زفاف بإضاءة ليلية"><span class="zoom">＋</span><span class="tag"><b><span class="ar">أجواء زفاف ليلية</span><span class="en">Evening wedding</span></b><span><span class="ar">كوشة وإضاءة ومشهد كامل</span><span class="en">Stage, lighting & atmosphere</span></span></span></button>
-        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-02.jpg" alt="تفاصيل كوشة ملكة من Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">تفاصيل الكوشة</span><span class="en">Stage details</span></b><span><span class="ar">ورد أبيض ولمسات وردية</span><span class="en">White florals & pink accents</span></span></span></button>
-        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-01.jpg" alt="استقبال Baby Yahya بالبالونات"><span class="zoom">＋</span><span class="tag"><b><span class="ar">استقبال Baby Yahya</span><span class="en">Baby Yahya welcome</span></b><span><span class="ar">بالونات وثيم أخضر وذهبي</span><span class="en">Green & gold balloon theme</span></span></span></button>
-        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-02.jpg" alt="طاولة ضيافة واستقبال مولود"><span class="zoom">＋</span><span class="tag"><b><span class="ar">ضيافة وثيم متكامل</span><span class="en">Complete welcome theme</span></b><span><span class="ar">توزيعات وطاولة وخلفية</span><span class="en">Favours, table & backdrop</span></span></span></button>
-        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-03.jpg" alt="لوحة ترحيب وورد من Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">لوحة ترحيب</span><span class="en">Welcome display</span></b><span><span class="ar">ورد وإضاءة وتفاصيل ضيافة</span><span class="en">Flowers, lighting & details</span></span></span></button>
-        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-04.jpg" alt="مدخل ترحيب بالمولود"><span class="zoom">＋</span><span class="tag"><b><span class="ar">مدخل وترحيب</span><span class="en">Welcome entrance</span></b><span><span class="ar">بالونات ولوحة مخصصة</span><span class="en">Balloons & custom sign</span></span></span></button>
+        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="Luxury wedding stage with white florals by Middle East Events, UAE event planner"><span class="zoom">＋</span><span class="tag"><b><span class="ar">زفاف بطابع فاخر</span><span class="en">Luxury wedding stage</span></b><span><span class="ar">ورد أبيض وتفاصيل ناعمة</span><span class="en">White florals & soft details</span></span></span></button>
+        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-garden.webp" alt="Outdoor wedding ceremony styled by Middle East Events, professional event organizers"><span class="zoom">＋</span><span class="tag"><b><span class="ar">زفاف خارجي</span><span class="en">Outdoor wedding</span></b><span><span class="ar">قوس ورد وجلسة متناسقة</span><span class="en">Floral arch & styled seating</span></span></span></button>
+        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-lighting.webp" alt="Evening wedding stage and lighting by Middle East Events event management team"><span class="zoom">＋</span><span class="tag"><b><span class="ar">أجواء زفاف ليلية</span><span class="en">Evening wedding</span></b><span><span class="ar">كوشة وإضاءة ومشهد كامل</span><span class="en">Stage, lighting & atmosphere</span></span></span></button>
+        <button class="g" type="button" data-category="wedding" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-02.jpg" alt="Custom wedding planning details by Middle East Events, UAE event planner"><span class="zoom">＋</span><span class="tag"><b><span class="ar">تفاصيل الكوشة</span><span class="en">Stage details</span></b><span><span class="ar">ورد أبيض ولمسات وردية</span><span class="en">White florals & pink accents</span></span></span></button>
+        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-01.jpg" alt="Custom party planning for a baby welcome celebration by Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">استقبال Baby Yahya</span><span class="en">Baby Yahya welcome</span></b><span><span class="ar">بالونات وثيم أخضر وذهبي</span><span class="en">Green & gold balloon theme</span></span></span></button>
+        <button class="g" type="button" data-category="baby" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-02.jpg" alt="Party and event planning table setup by Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">ضيافة وثيم متكامل</span><span class="en">Complete welcome theme</span></b><span><span class="ar">توزيعات وطاولة وخلفية</span><span class="en">Favours, table & backdrop</span></span></span></button>
+        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-wedding-03.jpg" alt="Wedding welcome display and flowers by professional event organizers"><span class="zoom">＋</span><span class="tag"><b><span class="ar">لوحة ترحيب</span><span class="en">Welcome display</span></b><span><span class="ar">ورد وإضاءة وتفاصيل ضيافة</span><span class="en">Flowers, lighting & details</span></span></span></button>
+        <button class="g" type="button" data-category="details" onclick="openLightbox(this.querySelector('img'))"><img loading="lazy" decoding="async" src="assets/ig-baby-04.jpg" alt="Custom party planning entrance with balloons by Middle East Events"><span class="zoom">＋</span><span class="tag"><b><span class="ar">مدخل وترحيب</span><span class="en">Welcome entrance</span></b><span><span class="ar">بالونات ولوحة مخصصة</span><span class="en">Balloons & custom sign</span></span></span></button>
       </div>
       <a class="insta" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener">◎ <span class="ar">شاهد المزيد على إنستغرام</span><span class="en">See more on Instagram</span> <b>@middleeastevents3</b></a>
     </section>
@@ -349,7 +364,7 @@
         <a class="film-media reveal" href="https://www.instagram.com/middleeastevents3/reels/" target="_blank" rel="noopener" aria-label="شاهد ريلز الأعراس على إنستغرام">
           <div class="film-frame">
             <span class="film-badge"><i></i><span class="ar">فيديو من أعمالنا</span><span class="en">OUR REAL WORK</span></span>
-            <img src="assets/wedding-hotel-poster.webp" alt="لقطة من تجهيز زفاف فندقي من Middle East Events">
+            <img src="assets/wedding-hotel-poster.webp" alt="Luxury hotel wedding setup by Middle East Events, UAE wedding planner">
           </div>
           <p class="film-note"><span class="ar">اضغط لمشاهدة ريلز الأعراس على إنستغرام</span><span class="en">Tap to watch our wedding reels on Instagram</span></p>
         </a>
@@ -382,7 +397,7 @@
 
     <section class="pad wrap" id="why">
       <div class="proof">
-        <div class="proof-photo reveal"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="كوشة زفاف متكاملة من Middle East Events"><div class="proof-caption"><b><span class="ar">زفاف بتصميم متكامل</span><span class="en">One complete wedding design</span></b><span><span class="ar">كوشة • ورد • إضاءة • تفاصيل</span><span class="en">Stage • florals • lighting • details</span></span></div></div>
+        <div class="proof-photo reveal"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="Complete luxury wedding design by Middle East Events, UAE event planner"><div class="proof-caption"><b><span class="ar">زفاف بتصميم متكامل</span><span class="en">One complete wedding design</span></b><span><span class="ar">كوشة • ورد • إضاءة • تفاصيل</span><span class="en">Stage • florals • lighting • details</span></span></div></div>
         <div class="reveal"><p class="eyebrow"><span class="ar">لماذا Middle East Events؟</span><span class="en">WHY MIDDLE EAST EVENTS?</span></p><h2><span class="ar">نرتّب التفاصيل لتستمتع أنت بالمناسبة</span><span class="en">We handle the details so you enjoy the moment</span></h2><div class="why">
           <article><i>01</i><div><h3><span class="ar">فكرة تناسبك</span><span class="en">A concept that fits you</span></h3><p><span class="ar">نبدأ من نوع المناسبة والألوان والمساحة والميزانية.</span><span class="en">We start with your occasion, colours, space and budget.</span></p></div></article>
           <article><i>02</i><div><h3><span class="ar">تنسيق منسجم</span><span class="en">One coordinated look</span></h3><p><span class="ar">الخلفية والورد والبالونات والطاولة تظهر كهوية واحدة.</span><span class="en">Backdrop, flowers, balloons and tables form one complete identity.</span></p></div></article>
@@ -423,10 +438,10 @@
     <section class="social-strip wrap">
       <div class="social-grid reveal">
         <div class="social-intro"><small>FOLLOW THE DETAILS</small><h3><span class="ar">المزيد من أعمالنا</span><span class="en">More of our work</span></h3><a href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener">@middleeastevents3 ↗</a></div>
-        <a class="social-shot" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="كوشة زفاف بيضاء من أعمالنا"></a>
-        <a class="social-shot" href="https://www.instagram.com/p/DXJvFGJAuHo/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-garden.webp" alt="جلسة زفاف خارجية من أعمالنا"></a>
-        <a class="social-shot" href="https://www.instagram.com/p/DWmAKJoghOH/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-lighting.webp" alt="كوشة زفاف بإضاءة ليلية من أعمالنا"></a>
-        <a class="social-shot" href="https://www.instagram.com/p/Dak5cFnAogk/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-baby-04.jpg" alt="مدخل استقبال مولود من أعمالنا"></a>
+        <a class="social-shot" href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-oxygen.png" alt="Luxury wedding styling from Middle East Events, UAE event planner"></a>
+        <a class="social-shot" href="https://www.instagram.com/p/DXJvFGJAuHo/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-garden.webp" alt="Outdoor wedding design by Middle East Events professional event organizers"></a>
+        <a class="social-shot" href="https://www.instagram.com/p/DWmAKJoghOH/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-wedding-lighting.webp" alt="Evening wedding event management by Middle East Events"></a>
+        <a class="social-shot" href="https://www.instagram.com/p/Dak5cFnAogk/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="assets/ig-baby-04.jpg" alt="Custom party planning entrance by Middle East Events"></a>
       </div>
     </section>
 
@@ -437,13 +452,13 @@
   </main>
 
   <footer class="wrap">
-    <a class="brand" href="#top"><img src="assets/logo.png" alt="Middle East Events logo"><span class="brandtext">MIDDLE EAST <b>EVENTS</b></span></a>
+    <a class="brand" href="#top"><img src="assets/logo.png" alt="Middle East Events logo — UAE wedding and event planner"><span class="brandtext">MIDDLE EAST <b>EVENTS</b></span></a>
     <div class="footer-contact"><p><span class="ar">تنسيق مناسبات</span><span class="en">Event styling</span><br><b dir="ltr">+971 52 382 6110</b></p></div>
     <div class="social"><a href="https://www.instagram.com/middleeastevents3/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://wa.me/971523826110" target="_blank" rel="noopener">WhatsApp ↗</a></div>
   </footer>
 
   <a class="float" href="https://wa.me/971523826110?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Middle%20East%20Events%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%AC%D9%87%D9%8A%D8%B2%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9." target="_blank" rel="noopener">◉ <span class="ar">احجز عبر واتساب</span><span class="en">Book on WhatsApp</span></a>
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" onclick="closeLightbox(event)"><button type="button" onclick="closeLightbox(event)">×</button><img id="lightboxImage" alt=""></div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" onclick="closeLightbox(event)"><button type="button" onclick="closeLightbox(event)">×</button><img id="lightboxImage" alt="Middle East Events image preview"></div>
 
   <script>
     const body=document.body;
