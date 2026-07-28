@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://middleeastevents.ae/sitemap.xml
